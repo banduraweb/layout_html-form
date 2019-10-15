@@ -1,0 +1,63 @@
+body {
+  padding: 0;
+}
+
+.forms-input {
+  margin-bottom: 10px;
+}
+
+.last {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.full-date {
+  font-family: "Courier New", serif;
+  width: 148px;
+}
+
+.age {
+  width: 65px;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.password {
+  margin-bottom: 10px;
+}
+
+.radio-no {
+  margin-left: 5px;
+}
+
+.yes {
+  margin-left: 4px;
+}
+
+.no {
+  margin-left: 4px;
+}
+
+.color {
+  margin-top: 4px;
+}
+
+.time {
+  width: 124px;
+  font-family: "Courier New", serif;
+}
+
+.range {
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.comments {
+  width: 177px;
+}
+
+.recommendation {
+  margin-top: 10px;
+}
