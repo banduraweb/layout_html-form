@@ -9,55 +9,95 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" autocomplete="off">
-  <fieldset class="fieldset">
+<form class="form" action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" autocomplete="off">
+  <fieldset class="form__fieldset">
     <legend>Personal information</legend>
     <label>
       Surname:
-      <input class="forms-input" type="text" name="surname" value="" required><br>
+      <input class="form__users-input"
+             type="text"
+             name="surname"
+             value=""
+             required><br>
     </label>
     <label>
       Name:
-      <input class="forms-input" type="text" name="name" value="" required><br>
+      <input class="form__users-input"
+             type="text"
+             name="name" value=""
+             required><br>
     </label>
     <label>
       How old are You?
-      <input class="age forms-input" type="number" name="age" value="12"><br>
+      <input class="form__users-input age-input"
+             type="number"
+             name="age"
+             value="12"><br>
     </label>
     <label>
       Full date of birth:
-      <input class="full-date forms-input" type="date" name="full-date" value="" required><br>
+      <input class="form__users-input date-input"
+             type="date"
+             name="date-birth"
+             value=""
+             required><br>
     </label>
     <label>
       I accept the term of the agreement:
-      <input class="last" type="checkbox" name="agreement" value="" required><br>
+      <input class="form__users-checkbox"
+             type="checkbox"
+             name="agreement"
+             value=""
+             required><br>
     </label>
   </fieldset>
-  <fieldset class="fieldset">
+  <fieldset class="form__fieldset">
     <legend>Registration</legend>
     <label>
       E-mail:
-      <input class="forms-input" type="email" name="email" value="" placeholder="email@example.com" required><br>
+      <input class="form__users-input"
+             type="email"
+             name="email"
+             value=""
+             placeholder="email@example.com"
+             required><br>
     </label>
     <label>
       Password:
-      <input class="last" type="password" name="password" value="" required minlength="8" maxlength="25"><br>
+      <input class="form__users-password"
+             type="password"
+             name="password"
+             value=""
+             required minlength="8"
+             maxlength="25"><br>
     </label>
   </fieldset>
-  <fieldset  class="fieldset">
+  <fieldset  class="form__fieldset">
     <legend>An interesting fact about you!</legend>
     <label>
       Do you love cats?
-      <input class="forms-input" type="radio" name="yes"><span class="yes">Yes</span>
-      <input class="radio-no forms-input" name="no" type="radio"><span class="no">No</span><br>
+      <input class="form__users-input"
+             type="radio"
+             name="choice-yes">
+      <span class="form__user-choice-yes">Yes</span>
+      <input class="form__users-input choice_no-input"
+             name="no"
+             type="radio">
+      <span class="form__user-choice-no">No</span><br>
     </label>
     <label>
       What is your favorite color?
-      <input class="color forms-input" type="color" name="color" value="#FFF"><br>
+      <input class="form__users-input color-input"
+             type="color"
+             name="color"
+             value="#FFF"><br>
     </label>
     <label>
       What time do you go to bed?
-      <input class="time forms-input" type="time" name="time" value=""><br>
+      <input class="form__users-input time-input"
+             type="time"
+             name="time"
+             value=""><br>
     </label>
     <label>
       What are your favorite brand of cars?
@@ -69,18 +109,23 @@
     </label>
     <label>
       How do you rate our work?
-      <input class="range forms-input" type="range" name="range" min="0" max="0"><br>
+      <input class="form__users-input range-input"
+             type="range"
+             name="range"
+             min="0"
+             max="0"><br>
     </label>
   </fieldset>
-  <fieldset class="fieldset">
+  <fieldset class="form__fieldset">
     <legend>Additional info</legend>
     <label>
       Comments:
-      <textarea class="comments" name="comments"></textarea><br>
+      <textarea class="form__users-comments"
+                name="comments"></textarea><br>
     </label>
     <label>
       Would you recommend us?
-      <select class="recommendation">
+      <select class="form__users-recommendation">
         <option> yes</option>
         <option> no</option>
       </select>

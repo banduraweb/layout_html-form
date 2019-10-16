@@ -2,25 +2,30 @@ body {
   padding: 0;
 }
 
-.forms-input {
+.form__users-input {
   margin-bottom: 10px;
 }
 
-.last {
+.form__users-checkbox {
   margin-bottom: 0;
   margin-left: 0;
 }
 
-.full-date {
+.form__users-password {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.date-input {
   font-family: "Courier New", serif;
   width: 148px;
 }
 
-.age {
+.age-input {
   width: 65px;
 }
 
-.fieldset {
+.form__fieldset {
   margin-bottom: 20px;
 }
 
@@ -28,36 +33,36 @@ body {
   margin-bottom: 10px;
 }
 
-.radio-no {
+.choice_no-input {
   margin-left: 5px;
 }
 
-.yes {
+.form__user-choice-yes {
   margin-left: 4px;
 }
 
-.no {
+.form__user-choice-no {
   margin-left: 4px;
 }
 
-.color {
+.color-input {
   margin-top: 4px;
 }
 
-.time {
+.time-input {
   width: 124px;
   font-family: "Courier New", serif;
 }
 
-.range {
+.range-input {
   margin-top: 12px;
   margin-bottom: 4px;
 }
 
-.comments {
+.form__users-comments {
   width: 177px;
 }
 
-.recommendation {
+.form__users-recommendation {
   margin-top: 10px;
 }
