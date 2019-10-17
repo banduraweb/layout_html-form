@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<form class="form" action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" autocomplete="off">
+<form class="form" action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post"
+      autocomplete="off">
   <fieldset class="form__fieldset">
     <legend>Personal information</legend>
     <label>
@@ -28,21 +29,23 @@
     </label>
     <label>
       How old are You?
-      <input class="form__users-input age-input"
+      <input class="form__users-input"
              type="number"
              name="age"
-             value="12"><br>
+             value="12"
+             min="12"
+             max="100"><br>
     </label>
     <label>
       Full date of birth:
-      <input class="form__users-input date-input"
+      <input class="form__users-input"
              type="date"
              name="date-birth"
              required><br>
     </label>
     <label>
       I accept the term of the agreement:
-      <input class="form__users-checkbox"
+      <input
              type="checkbox"
              name="agreement"
              required><br>
@@ -60,72 +63,82 @@
     </label>
     <label>
       Password:
-      <input class="form__users-password"
-             type="password"
-             name="password"
-             required minlength="8"
-             maxlength="25"><br>
-    </label>
-  </fieldset>
-  <fieldset  class="form__fieldset">
-    <legend>An interesting fact about you!</legend>
-    <label>
-      Do you love cats?
-      <input class="form__users-input"
-             type="radio"
-             name="choice">
-    </label>
-      <span class="form__user-choice-yes">Yes</span>
-    <label>
-      <input class="form__users-input choice_no-input"
-             name="choice"
-             type="radio">
-    </label>
-      <span class="form__user-choice-no">No</span><br>
-    <label>
-      What is your favorite color?
-      <input class="form__users-input color-input"
-             type="color"
-             name="color"
-             value="#FFF">
-        <br>
-    </label>
-    <label>
-      What time do you go to bed?
-      <input class="form__users-input time-input"
-             type="time"
-             name="time">
-        <br>
-    </label>
-    <label>
-      What are your favorite brand of cars?
-      <select size="4" multiple>
-        <option> BMW</option>
-        <option> Audi</option>
-        <option> Lada</option>
-      </select><br>
-    </label>
-    <label>
-      How do you rate our work?
-      <input class="form__users-input range-input"
-             type="range"
-             name="range"
-             min="0"
-             max="0"><br>
+      <input
+        type="password"
+        name="password"
+        required minlength="8"
+        maxlength="25"><br>
     </label>
   </fieldset>
   <fieldset class="form__fieldset">
-    <legend>Additional info</legend>
+    <legend>An interesting fact about you!</legend>
+    <div class="form__users-input">
+      <label>
+        Do you love cats?
+        <input
+          type="radio"
+          name="choice">
+      </label>
+      <span>Yes</span>
+      <label>
+        <input
+          name="choice"
+          type="radio">
+      </label>
+      <span>No</span>
+    </div>
     <label>
-      Comments:
-      <textarea class="form__users-comments"
-                name="comments"></textarea><br>
+      What is your favorite color?
+      <input class="form__users-input"
+             type="color"
+             name="color"
+             value="#FFF">
+      <br>
     </label>
     <label>
+      What time do you go to bed?
+      <input class="form__users-input"
+             type="time"
+             name="time">
+      <br>
+    </label>
+    <div class="form__users-input">
+      <label>
+        What are your favorite brand of cars?
+        <select size="4" multiple>
+          <option> BMW</option>
+          <option> Audi</option>
+          <option> Lada</option>
+        </select>
+      </label>
+    </div>
+    <div class="test2">
+      <label>
+        How do you rate our work?
+        <input class="form__users-input"
+               type="range"
+               name="range"
+               min="0"
+               max="0">
+      </label>
+    </div>
+  </fieldset>
+  <fieldset class="form__fieldset">
+    <legend>Additional info</legend>
+    <div class="form__users-input">
+      <label>
+        Comments:
+        <textarea
+          name="comments">
+          </textarea><br>
+      </label>
+    </div>
+
+    <label>
       Would you recommend us?
-      <select class="form__users-recommendation">
-        <option> yes</option>
-        <option> no</option>
+      <select>
+        <option>yes</option>
+        <option>no</option>
       </select>
     </label>
   </fieldset>
