@@ -1,68 +1,11 @@
-body {
-  padding: 0;
-}
-
 .form__users-input {
   margin-bottom: 10px;
-}
-
-.form__users-checkbox {
-  margin-bottom: 0;
-  margin-left: 0;
-}
-
-.form__users-password {
-  margin-bottom: 0;
-  margin-left: 0;
-}
-
-.date-input {
-  font-family: "Courier New", serif;
-  width: 148px;
-}
-
-.age-input {
-  width: 65px;
 }
 
 .form__fieldset {
   margin-bottom: 20px;
 }
 
-.password {
-  margin-bottom: 10px;
-}
-
-.choice_no-input {
-  margin-left: 5px;
-}
-
-.form__user-choice-yes {
-  margin-left: 4px;
-}
-
-.form__user-choice-no {
-  margin-left: 4px;
-}
-
-.color-input {
-  margin-top: 4px;
-}
-
-.time-input {
-  width: 124px;
-  font-family: "Courier New", serif;
-}
-
-.range-input {
-  margin-top: 12px;
-  margin-bottom: 4px;
-}
-
-.form__users-comments {
-  width: 177px;
-}
-
-.form__users-recommendation {
-  margin-top: 10px;
+.test2 {
+  margin-bottom: -6px;
 }
